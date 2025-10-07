@@ -7,8 +7,24 @@
   <title>LAB-03</title>
   <style>
     body{
-      background-color: rgba(0, 0, 0, 0.623);
+      background-color: rgba(20, 112, 173, 0.596);
     }
+
+    h1{
+      color: white;
+    }
+
+    #maintitle{
+      font-size: 2.5em;
+      border-bottom: 2px solid white;
+    }
+
+    .title{
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      text-align: center;
+    }
+
     .form-group label {
       display: block;
       margin-left: 5px;
@@ -39,7 +55,8 @@
 
   <!-- encabezado de cuerpo de la pagina-->
   <header>
-    <h1>Plataforma Educativa Universidad Central</h1>
+    <h1 id="maintitle" class="title" style="color: black;">Plataforma Educativa</h1>
+    <h1 class="title" style="color: #092d7c;">Universidad Central</h1>
   </header>
 
   <!-- menu -->
@@ -56,10 +73,10 @@
     <section>
       <form action="#" method="post">
         <fieldset>
-          <legend>Registro de Usuario</legend>
+          <legend style="color: rgb(255, 255, 255);">Registro de Usuario</legend>
 
           <div class="form-group">
-            <label for="username">Nombre de Usuario:</label>
+            <label  for="username">Nombre de Usuario:</label>
             <input class="form-input" type="text" id="username" name="username" required>
 
             <label for="email">Correo Electrónico:</label>
@@ -127,7 +144,7 @@
   </main>
   <footer>
     <p>&copy; 2023 Plataforma Educativa Universidad Central</p>
-    <p>Contacto: <a href="mailto:benadelcaleb@gmail.com">Caleb</p>
+    <p>Contacto: <a href="mailto:benadelcaleb@gmail.com">Caleb Benavides Delgado</p>
   </footer>
 </body>
 
