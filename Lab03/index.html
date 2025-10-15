@@ -4,76 +4,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
   <title>LAB-03</title>
-  <style>
-    body{
-      background-color: rgba(20, 112, 173, 0.596);
-    }
-
-    h1{
-      color: white;
-    }
-
-    #maintitle{
-      font-size: 2.5em;
-      border-bottom: 2px solid white;
-    }
-
-    .title{
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      text-align: center;
-    }
-
-    .form-group label {
-      display: block;
-      margin-left: 5px;
-      font-weight: bold;
-    }
-
-    .form-input {
-      width: 100%;
-      padding: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    .submit-button {
-      padding: 10px 50px;
-      border-radius: 15px;
-      transition: background-color 0.3s ease;
-    }
-
-    .submit-button:hover {
-      background-color: #2563eb;
-      /* Un azul más oscuro al pasar el mouse */
-    }
-  </style>
+  
 </head>
 
 <body>
 
   <!-- encabezado de cuerpo de la pagina-->
   <header>
+    <div class = "header-titles">
     <h1 id="maintitle" class="title" style="color: black;">Plataforma Educativa</h1>
     <h1 class="title" style="color: #092d7c;">Universidad Central</h1>
+    </div>
   </header>
 
   <!-- menu -->
-  <nav>
+  <nav class="menu">
     <ul>
-      <li><a href="final/">Inicio</a></li>
-      <li><a href="#">Cursos</a></li>
-      <li><a href="#">Contacto</a></li>
-      <li><a href="#">Ayuda</a></li>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="cursos">Cursos</a></li>
+      <li><a href="contacto">Contacto</a></li>
+      <li><a href="ayuda">Ayuda</a></li>
     </ul>
   </nav>
 
   <main>
-    <section>
+    <section id="form-section">
       <form action="#" method="post">
         <fieldset>
-          <legend style="color: rgb(255, 255, 255);">Registro de Usuario</legend>
+          <legend style="color: rgb(0, 0, 0);">Registro de Usuario</legend>
 
           <div class="form-group">
             <label  for="username">Nombre de Usuario:</label>
@@ -135,15 +95,18 @@
         </fieldset>
       </form>
     </section>
-    <section>
+
+    <section id="video-section">
       <iframe width="800" height="600" src="https://www.youtube.com/embed/LXb3EKWsInQ?si=KRC7kR0cZzGenVSb&amp;start=61"
         title="Video Incrustado" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
   </main>
+  <!-- pie de pagina -->
   <footer>
-    <p>&copy; 2023 Plataforma Educativa Universidad Central</p>
+    <h1>Universidad Central</h1>
+    <p>&copy; 2025 Plataforma Educativa Universidad Central</p>
     <p>Contacto: <a href="mailto:benadelcaleb@gmail.com">Caleb Benavides Delgado</p>
   </footer>
 </body>
