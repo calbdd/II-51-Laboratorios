@@ -1,0 +1,129 @@
+body{
+      background-color: rgba(20, 112, 173, 0.596);
+    }
+
+    h1{
+      color: white;
+      padding: 5px;
+    }
+
+.header-titles{
+      margin: 30px 0px 20px;
+    }
+
+
+
+
+    #maintitle{
+      font-size: 2.5em;
+      border-bottom: 2px solid white;
+    }
+
+    .title{
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      text-align: center;
+    }
+
+    .form-group label {
+      display: block;
+      margin-left: 5px;
+      font-weight: bold;
+    
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .submit-button {
+      padding: 10px 50px;
+      border-radius: 15px;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      margin-left: 290px;
+    }
+
+    .submit-button:hover {
+      background-color: #81a3eb;
+      /* Un azul más oscuro al pasar el mouse */
+    }
+
+.menu, footer{
+    color: white;
+    background-color: #123e77;
+    overflow: hidden;
+    margin: 20px 0px;
+    border-radius: 8px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}   
+
+.menu ul {
+    list-style-type: none;
+    margin: 20;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color : white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: #091769;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+#form-section{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+#video-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px auto;
+    margin: 20px auto;
+}
+
+#video-section iframe{
+    border-radius: 6px;
+    max-width: 1000px;
+}
+
+footer{
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+}
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    
