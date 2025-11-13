@@ -34,3 +34,17 @@ $("#mostrarOcultar").click(function () {
     contador += cambio;
     contadorElemento.textContent = contador;
   };
+
+let temaOscuro = false;
+function alternarTema() {
+  temaOscuro = !temaOscuro;
+  if (temaOscuro) 
+  {
+    document.getElementById("tema").className = "fa-solid fa-sun";
+  } 
+  else 
+  {
+    document.getElementById("tema").className = "fa-solid fa-moon";
+  }
+  document.getElementById("contenido").classList.toggle("oscuro");
+}
