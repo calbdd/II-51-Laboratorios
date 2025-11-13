@@ -26,3 +26,11 @@ $("#quitarClase").click(function () {
 $("#mostrarOcultar").click(function () {
   $("#elementoOculto").toggle();
 });
+
+ let contador = 0;
+  const contadorElemento = document.getElementById("contador");
+
+  const modificarContador = (cambio) => {
+    contador += cambio;
+    contadorElemento.textContent = contador;
+  };
