@@ -40,11 +40,13 @@
          style="width:100px;height:100px;background-color:#3498db;color:#fff;text-align:center;line-height:100px;cursor:move;">
         Arrástrame
     </div>
+    
     <div id="drop1" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)">Caja 1</div>
     <div id="drop2" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)">Caja 2</div>
+    <div id="drop2" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)">Caja 3</div>
 
     <h2>Lectura de Archivos</h2>
-    <input type="file" onchange="previewFile(event)">
+    <input type="file" onchange="previewFile(event)" multiple>
     <img id="preview" class="preview" src="">
 
     <script>
