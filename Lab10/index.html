@@ -1,13 +1,30 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Practica React - II-51 Programacion Internet</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo Base - JavaScript Interactivo</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        #canvasArea { border: 1px solid black; margin-bottom: 20px; }
+        .drop-zone {
+            width: 200px;
+            height: 200px;
+            border: 2px dashed #ccc;
+            display: inline-block;
+            margin-right: 10px;
+            text-align: center;
+            vertical-align: top;
+            padding-top: 60px;
+            background-color: #f9f9f9;
+        }
+        .drop-zone.over {
+            border-color: #333;
+            background-color: #e0e0e0;
+        }
+        img.preview {
+            display: block;
+            max-width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
