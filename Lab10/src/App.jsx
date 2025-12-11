@@ -1,21 +1,12 @@
-import { useEffect, useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import boy from "./assets/boy.png";
-import adulto from "./assets/adulto.png";
-import "./App.css";
-import LikeButton from "./LikeButton.jsx";
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import boyImg from './assets/boy.png'
+import adultoImg from './assets/adulto.png'
+import './App.css'
 
 function App() {
-  // Estado para el contador
-  //Hook useState
-  const [age, setAge] = useState(0);
-  const [isAdutl, setIsAdult] = useState(false);
-
-  //Hook useEffect para actualizar isAdult cuando age cambie
-  useEffect(() => {
-    setIsAdult(age >= 18);
-  }, [age]);
+  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -29,20 +20,25 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setAge((age) => age + 1)}>age is {age}</button>
-        <LikeButton></LikeButton>
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
+      <div className="avatar-container">
+        <img 
+          src={count >= 18 ? adultoImg : boyImg} 
+          className="avatar" 
+          alt="Avatar" 
+        />
+      </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <div className="avatars">
-        <img src={isAdutl ? adulto : boy} alt="avatar" />
-      </div>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
